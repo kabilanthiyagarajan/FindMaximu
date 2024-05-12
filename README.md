@@ -1,61 +1,56 @@
 # Find the maximum of a list of numbers
-
 ## Aim:
-
 To write a program to find the maximum of a list of numbers.
-
 ## Equipment’s required:
-
-1. Hardware – PCs
-2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
-
+1.	Hardware – PCs
+2.	Anaconda – Python 3.7 Installation / Moodle-Code Runner
 ## Algorithm:
-
-1. Get the list of marks as input
-2. Use the sort() function or max() function or use the for loop to find the maximum mark.
-3. Return the maximum value
-
+1.	Get the list of marks as input
+2.	Use the sort() function or max() function or use the for loop to find the maximum mark.
+3.	Return the maximum value
 ## Program:
 
-i) # To find the maximum of marks using the list method sort.
-
+i)	# To find the maximum of marks using the list method sort.
 ```Python
-# Program to mark the maximum of marks using the list method sort.
-# Developed by: kabilan T
-# Register No:212222230059
-def max_marks(marks):
-    marks.sort()
-    large=marks[-1]
-    return large
 
+'''
+name:kabilan T 
+ref no: 212222230059
+'''
+def max_marks(array):
+    return max (array)
 
 ```
 
-ii) # To find the maximum marks using the list method max().
-
+ii)	# To find the maximum marks using the list method max().
 ```Python
-# Program to find the maximum marks using the list method max().
-# Developed by: kabilan T
-# Register No: 212222230059
-def max_marks(marks):
-    large=max(marks)
-    return large
+'''
+name:kabilan T
+ref no: 212222230059
+'''
+def max_marks(array):
+    max1=array[0]
+    for i in range(1,len(array)):
+        if max1<array[i]:
+           max1=array[i]
+    return max1
 
 
 ```
 
 iii) # To find the maximum marks without using builtin functions.
-
 ```Python
-# Program to find the maximum marks without using builtin functions.
-# Developed bykabilan T
-# Register No: 212222230059
-def max_marks(marks):
-    max_mark=0
-    for i in marks:
-        if i>max_mark:
-            max_mark=i
-    return max_mark
+'''
+name:kabilan T 
+ref no: 212222230059
+'''
+
+def max_marks(array):
+    max1=array[0]
+    for i in range(1,len(array)):
+        if max1<array[i]:
+            max1=array[i]
+    return max1
 
 
 ```
